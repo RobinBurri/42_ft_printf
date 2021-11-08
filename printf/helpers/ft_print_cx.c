@@ -6,13 +6,16 @@
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:33:24 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/08 10:36:18 by rburri           ###   ########.fr       */
+/*   Updated: 2021/11/08 12:32:54 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_cx(va_list args)
+int	ft_print_cx(unsigned int num)
 {
-	
+	char	*hex;
+	int		i;
+
+	hex = ft_itoa_base(num, 16, 1);
 }

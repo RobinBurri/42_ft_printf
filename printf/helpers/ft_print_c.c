@@ -6,13 +6,16 @@
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:25:32 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/08 10:28:45 by rburri           ###   ########.fr       */
+/*   Updated: 2021/11/08 10:46:55 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "helpers.h"
 
-int	ft_print_c(va_list args)
+int	ft_print_c(char c)
 {
-	
+	int	i;
+
+	i = ft_putchar(c);
+	return (i);
 }

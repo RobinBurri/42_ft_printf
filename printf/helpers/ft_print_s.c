@@ -6,13 +6,20 @@
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:30:26 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/08 10:36:44 by rburri           ###   ########.fr       */
+/*   Updated: 2021/11/08 11:39:54 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "helpers.h"
 
-int	ft_print_s(va_list args)
+int	ft_print_s(char *str)
 {
-	
+	int	i;
+
+	while (str[i])
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
+	return (i);
 }

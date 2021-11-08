@@ -1,21 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_x.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/08 10:32:34 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/08 12:31:30 by rburri           ###   ########.fr       */
+/*   Created: 2021/11/08 12:26:33 by rburri            #+#    #+#             */
+/*   Updated: 2021/11/08 12:26:44 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-int	ft_print_x(unsigned int num)
+int	ft_tolower(int c)
 {
-	char	*hex;
-	int		i;
-
-	hex = ft_itoa_base(num, 16, 0);
+	if (c >= 65 && c <= 90)
+		return (c + 32);
+	else
+		return (c);
 }

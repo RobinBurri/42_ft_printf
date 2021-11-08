@@ -1,21 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_x.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/08 10:32:34 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/08 12:31:30 by rburri           ###   ########.fr       */
+/*   Created: 2021/11/08 12:15:13 by rburri            #+#    #+#             */
+/*   Updated: 2021/11/08 12:15:26 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "helpers.h"
 
-int	ft_print_x(unsigned int num)
+char	*ft_strdup(const char *s)
 {
-	char	*hex;
+	char	*ret;
 	int		i;
+	int		len;
 
-	hex = ft_itoa_base(num, 16, 0);
+	i = 0;
+	len = ft_strlen(s);
+	ret = (char *)malloc((len + 1) * sizeof(char));
+	if (ret == NULL)
+		return (NULL);
+	while (s[i])
+	{
+		ret[i] = s[i];
+		i++;
+	}
+	ret[i] = '\0';
+	return (ret);
 }

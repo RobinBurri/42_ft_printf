@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_x.c                                       :+:      :+:    :+:   */
+/*   ft_strtolower.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/08 10:32:34 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/08 12:31:30 by rburri           ###   ########.fr       */
+/*   Created: 2021/11/08 12:27:11 by rburri            #+#    #+#             */
+/*   Updated: 2021/11/08 12:30:16 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "helpers.h"
 
-int	ft_print_x(unsigned int num)
+char	*ft_strtolower(char *str)
 {
-	char	*hex;
-	int		i;
+	int	i;
 
-	hex = ft_itoa_base(num, 16, 0);
+	i = 0;
+	while (str[i])
+	{
+		str[i] = ft_tolower(str[i]);
+		i++;
+	}
+	return (str);
 }
