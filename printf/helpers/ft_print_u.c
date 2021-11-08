@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_print_u.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/08 09:50:28 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/08 09:50:49 by rburri           ###   ########.fr       */
+/*   Created: 2021/11/08 10:32:07 by rburri            #+#    #+#             */
+/*   Updated: 2021/11/08 10:36:52 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <stdarg.h>
-# include <stdlib.h>
-# include "../helpers/helpers.h"
-
-int	ft_printf(const char *input, ...);
-
-#endif
+int	ft_print_u(va_list args)
+{
+	
+}

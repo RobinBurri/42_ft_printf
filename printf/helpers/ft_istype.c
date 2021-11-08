@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_istype.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/08 09:50:28 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/08 09:50:49 by rburri           ###   ########.fr       */
+/*   Created: 2021/11/08 09:45:50 by rburri            #+#    #+#             */
+/*   Updated: 2021/11/08 10:27:09 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "helpers.h"
 
-# include <stdarg.h>
-# include <stdlib.h>
-# include "../helpers/helpers.h"
-
-int	ft_printf(const char *input, ...);
-
-#endif
+int	ft_istype(char c)
+{
+	return (c == 'c' || c == 's' || c == 'p' || c == 'd' || c == 'i'
+		|| c == 'u' || c == 'x' || c == 'X' || c == '%');
+}
