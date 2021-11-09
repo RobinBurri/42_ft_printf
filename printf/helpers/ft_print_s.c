@@ -6,7 +6,7 @@
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:30:26 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/09 09:09:46 by rburri           ###   ########.fr       */
+/*   Updated: 2021/11/09 10:36:39 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_print_s(char *str)
 	int	i;
 
 	i = 0;
+	if (!str)
+		str = ("(null)");
 	while (str[i])
 	{
 		write(1, &str[i], 1);

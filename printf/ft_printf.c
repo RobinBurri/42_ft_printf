@@ -6,21 +6,21 @@
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 09:06:44 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/09 08:48:45 by rburri           ###   ########.fr       */
+/*   Updated: 2021/11/09 11:20:40 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_handle_print(int type, va_list args)
+int	ft_handle_print(int type, va_list args)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (type == 'c')
 		i = ft_print_c(va_arg(args, int));
 	else if (type == 's')
-		i = ft_print_s(va_arg(args, char*));
+		i = ft_print_s(va_arg(args, char *));
 	else if (type == 'p')
 		i = ft_print_p(va_arg(args, size_t));
 	else if (type == 'd' || type == 'i')
@@ -38,7 +38,7 @@ int ft_handle_print(int type, va_list args)
 
 int	ft_handle_input(const char *str, va_list args)
 {
-	int type;
+	int	type;
 	int	i;
 	int	count;
 
@@ -76,5 +76,5 @@ int	ft_printf(const char *input, ...)
 	count += ft_handle_input(str, args);
 	va_end(args);
 	free(str);
-	return (count);	
+	return (count);
 }

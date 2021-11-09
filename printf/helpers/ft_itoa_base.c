@@ -6,7 +6,7 @@
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 12:00:31 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/09 10:17:36 by rburri           ###   ########.fr       */
+/*   Updated: 2021/11/09 11:13:27 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static unsigned int	ft_nbdigits(size_t nb, int base)
 {
 	unsigned int	res;
 
-	res = 1;
+	res = 0;
 	while (nb != 0)
 	{
 		nb /= base;
@@ -42,9 +42,9 @@ char	*ft_itoa_base(size_t num, int base)
 	while (nbr != 0)
 	{
 		if ((nbr % base) < 10)
-			res[len - 1] = (nbr % base) + 48;
+			res[len] = (nbr % base) + 48;
 		else
-			res[len - 1] = (nbr % base) + 55;
+			res[len] = (nbr % base) + 55;
 		nbr /= base;
 		len--;
 	}	
