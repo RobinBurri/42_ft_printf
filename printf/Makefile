@@ -6,14 +6,14 @@
 #    By: rburri <rburri@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/05 08:22:15 by rburri            #+#    #+#              #
-#    Updated: 2021/11/09 09:12:30 by rburri           ###   ########.fr        #
+#    Updated: 2021/11/09 09:42:53 by rburri           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME	= libftprintf.a
 
-CC		= gcc -c ${CFLAGS}
+CC		= gcc -g -c ${CFLAGS}
 
 CFLAGS	= -Wall -Wextra -Werror
 
