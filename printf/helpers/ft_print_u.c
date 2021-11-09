@@ -6,20 +6,20 @@
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:32:07 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/08 11:50:07 by rburri           ###   ########.fr       */
+/*   Updated: 2021/11/09 09:07:26 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "helpers.h"
 
 int	ft_print_u(unsigned int num)
 {
 	char	*str;
-	int		i;
+	int		count;
 
-	i = 0;
+	count = 0;
 	str = ft_un_itoa(num);
-	i = ft_print_s(str);
+	count = ft_print_s(str);
 	free(str);
-	return (i);
+	return (count);
 }

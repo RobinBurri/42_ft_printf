@@ -6,7 +6,7 @@
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 09:06:44 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/08 10:33:56 by rburri           ###   ########.fr       */
+/*   Updated: 2021/11/09 08:48:45 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ int	ft_printf(const char *input, ...)
 	count = 0;
 	str = ft_strdup(input);
 	if (!str)
-		return (NULL);
+		return (-1);
 	va_start(args, input);
 	count += ft_handle_input(str, args);
 	va_end(args);

@@ -6,16 +6,19 @@
 /*   By: rburri <rburri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:33:24 by rburri            #+#    #+#             */
-/*   Updated: 2021/11/08 12:32:54 by rburri           ###   ########.fr       */
+/*   Updated: 2021/11/09 09:08:12 by rburri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "helpers.h"
 
 int	ft_print_cx(unsigned int num)
 {
 	char	*hex;
-	int		i;
+	int		count;
 
-	hex = ft_itoa_base(num, 16, 1);
+	count = 0;
+	hex = ft_itoa_base(num, 16);
+	count += ft_print_s(hex);
+	return (count);
 }
