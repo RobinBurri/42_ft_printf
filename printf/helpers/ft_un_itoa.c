@@ -17,10 +17,7 @@ static unsigned int	ft_nbdigits(unsigned int nb)
 	unsigned int	unsigned_nb;
 	unsigned int	res;
 
-	if (nb < 0)
-		unsigned_nb = nb * -1;
-	else
-		unsigned_nb = nb;
+	unsigned_nb = nb;
 	res = 1;
 	while (unsigned_nb >= 10)
 	{
@@ -34,10 +31,7 @@ static int	ft_cnt_len(unsigned int n)
 {
 	unsigned int	len;
 
-	if (n < 0)
-		len = ft_nbdigits(n) + 1;
-	else
-		len = ft_nbdigits(n);
+	len = ft_nbdigits(n);
 	return (len);
 }
 
