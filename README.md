@@ -1,2 +1,2 @@
-Recoder printf. 
-Vous apprendrez principalement à utiliser les arguments variadiques.
+Tis projet is about coding the printf function in C.
+The main goal is to discover variadic functions.
